@@ -1400,7 +1400,7 @@
                     if (this.typeConfig.speedOffset) {
                         speed += this.speedOffset;
                     }
-                    this.xPos -= Math.floor((speed * FPS / 1000) * deltaTime);
+                    this.xPos -= Math.floor((speed * 1.2 * FPS / 1000) * deltaTime);
 
                     // Update frame
                     if (this.typeConfig.numFrames) {
@@ -1498,7 +1498,7 @@
             type: 'PTERODACTYL',
             width: 46,
             height: 40,
-            yPos: [100, 75, 50], // Variable height.
+            yPos: [90, 75, 50], // Variable height.
             yPosMobile: [100, 50], // Variable height mobile.
             multipleSpeed: 999,
             minSpeed: 8.5,
